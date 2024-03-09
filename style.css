@@ -1,0 +1,180 @@
+body {
+    font-family: "Poppins", sans-serif; 
+}
+.container {
+    width: 80%;
+margin: 0 auto;
+}
+section {
+    padding: 10px;
+}
+span {
+    color: #FF136F;
+}
+button {
+    background-color: #FF136F;
+}
+
+/*  Navigation  Area Style */
+.nav-area{   
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 70%;
+}
+.search-box {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 10px;
+    height: 20px;
+}
+.search-box i {
+    color: lightgray;
+    font-size: 15px;
+}
+.search-box input {
+     width: 300px; 
+     height: 30px;
+     border: none;
+     margin-right: 5px;
+     background-color:#F1F1F1;
+}
+.search-box input:focus{
+    outline: none;
+}
+.nav-menu ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #707070;
+}
+
+/* Header Section Style */
+.header-area {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,50%);
+    background-color: #FEEAE9;
+    padding: 30px;
+    border-radius: 20px;
+}
+.header-area .content-section {
+    display: flex;
+    flex-direction: column;
+}
+.header-area .content-section h1{
+font-size: 3em;
+margin: 0;
+}
+.header-area .content-section span {
+    font-size: 3em;
+}
+.header-area .content-section  button{
+    width: 150px; 
+    border: none;
+    border-radius: 5px;
+}
+.header-area .content-section button a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+     padding: 10px 20px;  
+}
+.header-area .image-section {
+    display: flex;
+    justify-content: center;
+}
+.header-area .image-section img {
+    width: 70%;
+}
+
+/* Categories */
+.catalog {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.catalog .item {
+display: flex;
+justify-content: space-around;
+}
+.catalog .item h1{
+    color: white;
+}
+.catalog .item img {
+    width: 68px;
+}
+#watch, #bag, #shoe {
+padding: 15px;
+border-radius: 15px;
+}
+#watch {
+    background-color:#FF9C35 ;
+}
+#bag {
+    background-color: #FF589B;
+}
+#shoe {
+    background-color:#4289FF ;
+}
+
+/* Shoe Section Style */
+.shoe-bg {
+    background-color: #F4F4F4;
+}
+.shoe-title {
+    display:flex;
+    justify-content: space-between;
+    
+}
+.shoe-title a {
+    color:#FF9D00;
+}
+.shoe-section {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: repeat(3,1fr);
+}
+.product {
+    background-color:  white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.product .product-title {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.product .product-descreption {
+    text-align: center;
+}
+.shoe-section .product img {
+    width: 100%;
+
+}
+.product a {
+     color: white;
+     background-color: black; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    grid-gap: 2%;
+    text-decoration: none;
+}
+
+/*  Bacpack Style  */
+@media (max-width:390px) {
+    .header-area .content-section h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+}
